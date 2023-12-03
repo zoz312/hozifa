@@ -12,6 +12,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: 'before'
+        run: ls
+
+      - uses: action/checkout@v3
+
       - name: 'print folder '
         run: ls
 
