@@ -20,3 +20,11 @@ jobs:
       - name: 'login to Docker hub '
         run: docker login --username ${{ secrets.HAMZA }} --password ${{ secrets.DOCKER_TOKEN }}
 
+
+      - name: 'build docker image '
+        run: docker build -t ${{ secrets.HAMZA }}/hozifa .
+
+
+      - name: ' push '
+        run: docker push ${{ secrets.HAMZA }}/hozifa
+
