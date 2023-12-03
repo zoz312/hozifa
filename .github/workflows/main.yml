@@ -1,1 +1,16 @@
+on:
+  push:
+    branches:
+      - master
+
+
+
+
+jobs:
+  bulid:
+    run-on: ubuntu-latest
+
+    steps:
+      - name: 'testing github action '
+      run: echo hamza
 
