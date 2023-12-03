@@ -8,8 +8,8 @@ on:
 
 
 jobs:
-  bulid:
-    run-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
     steps:
       - name: 'testing github action '
